@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51, 0.3),rgba(5,3,21, 0.3));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}    
+.back-video {
+  position: absolute;
+
+  z-index: 1;
+}
+
+
+.content{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+h1{
+    font-size: 20rem;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+h1:hover{
+    -webkit-text-stroke: 2px #fff;
+     color:transparent;
+    
+}
+
+a{
+   background-color: rgba(0, 0, 0, 0.6); /* or any dark color */
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  width: 300px;
+  padding: 10px;
+  font-size: 3rem;
+  text-align: center;
+  z-index: 5;
+
+}
+
