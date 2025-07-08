@@ -47,7 +47,7 @@
     width: 100%;
     height: 100%;
     background-color: #faebd7;
-    transform:translateY(-100%);
+    transform:translateY(100%);
     transition: 0.5s ease-in-out;
     display: flex;
     align-items: center;
@@ -61,10 +61,60 @@
 
 
  .button2{
-     width: 200px;
-    height: 60px;
+     padding: 2rem 5rem;
     border: 2px solid #2957bb;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    position: relative;
 }
+
+.button2::before{
+    content: 'BUTTON';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9f1222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*  lets provide the animation and rotation*/
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+
+/* adding after effect for the button 2 */
+
+.button2::after{
+  content: 'BUTTON';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background-color: #11c532;
+  /* center the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* animation  */
+
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  transition-delay: 0.35s;
+}
+
+/* adding hover effect for the button2 */
+
+.button2:hover::before, .button2:hover::after{
+    transform: rotateX(0);
+}
+
 
 .button3{
      width: 200px;
@@ -83,6 +133,9 @@
     height: 60px;
     border: 2px solid #c511a4;
 }
+
+
+
 
 
 
