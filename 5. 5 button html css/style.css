@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+    
+}
+
+.container .buttons{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    gap: 60px;
+
+}
+
+.buttons .button1{
+    padding: 2rem 5rem;
+    border: 2px solid #faebd7;
+    background-color: transparent;
+    color: #030303;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.button1::before{
+    content: 'DOWNLOAD';
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #faebd7;
+    transform:translateY(-100%);
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button1:hover::before{
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+
+ .button2{
+     width: 200px;
+    height: 60px;
+    border: 2px solid #2957bb;
+}
+
+.button3{
+     width: 200px;
+    height: 60px;
+    border: 2px solid #9f1222;
+}
+
+.button4{
+     width: 200px;
+    height: 60px;
+    border: 2px solid #11c532;
+}
+
+.button5{
+     width: 200px;
+    height: 60px;
+    border: 2px solid #c511a4;
+}
+
+
+
+
