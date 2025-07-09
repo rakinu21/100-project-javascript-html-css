@@ -232,8 +232,47 @@ background-color: #11c532;
 .button5{
      width: 200px;
     height: 60px;
-    border: 2px solid #c511a4;
+    border: none;
+    background-color: #fff;
+    position: relative;
+    color: #000;
+    border-radius: 100px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
+
+.button5::before{
+    content: '';
+    position: absolute;
+    color: #2b2929;
+ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #aa6b6b;
+    border-radius: 100px;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+
+}
+
+.button5:hover::before{
+    transform: scaleX(1.4) scaleX(1.6);
+     opacity: 0;
+}
+
+.button5:hover{
+    transform: translateX(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   
+}
+
+.button5:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 
 
