@@ -17,6 +17,7 @@
     justify-content: center;
     flex-direction: column;
     margin: 50px;
+    gap: 50px;
 }
 
 /* first navbar list style */
@@ -95,3 +96,90 @@
 .items:hover::after{
  transform: scale(1);
 }
+
+
+/* second nav bar  */
+
+
+.navbar2{
+    width: 100%;
+    height: 200px ;
+
+}
+
+.navbar_ul2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar_ul2 .items2{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+       transition: all 1s;
+}
+
+
+.items2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -30px;
+    transition: all 1s;
+    transform-origin: top;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(1);
+   
+}
+
+.items2::after{
+ content: '';
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    transition: all 1s;
+    transform-origin: bottom;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(1);
+}
+
+.items2:hover::before{
+  
+    opacity: 1;
+    top: -10px;
+    transform: scale(1)
+}
+
+
+.items2:hover::after{
+    opacity: 1;
+    bottom: -10px;
+    transform: scale(1)
+}
+
+.items2:hover{
+    transform:scale(1.1);
+    background-color: #fff;
+    color: #000;
+}
+
