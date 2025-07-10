@@ -183,3 +183,86 @@
     color: #000;
 }
 
+
+
+/* 3rd navigation sytle */
+
+.navbar3{
+    width: 100%;
+    height: 200px ;
+
+}
+
+.navbar_ul3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar_ul3 .items3{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+       transition: all 1s;
+}
+
+.items3::before{
+    content: '';
+    width: 0;
+    height: 0;
+    right: 0;
+    top: 0;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    position: absolute;
+    transform-origin: left;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.items3::after{
+    content: '';
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    border-left: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    position: absolute;
+    transform-origin: right;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.items3:hover::before{
+    transform: scale(1);
+     width: 20px;
+    height: 20px;
+    opacity: 1;
+     right: -30px;
+    top: -30px;
+   
+}
+
+.items3:hover::after{
+     transform: scale(1);
+     width: 20px;
+    height: 20px;
+    opacity: 1;
+      left: -30px;
+    bottom: -30px;
+  
+}
+
