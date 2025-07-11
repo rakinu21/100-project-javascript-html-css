@@ -63,7 +63,7 @@ body{
     left:0;
   
     transform: translateX(-100%);
-    transition: 0.5s ease-in;
+    transition: 1s ease-in-out;
  }
 
  .container:hover .textContainer{
@@ -77,5 +77,58 @@ body{
  }
 
 
+ /* second image style */
 
 
+
+.container2{
+    width: 500px;
+    height: 500px;
+  
+    position: relative;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container2 .imageContainer2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: 1s ease-in-out;
+    transform: translateY(0);
+}
+
+
+ .image2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+ }
+
+
+ .textContainer2{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    background: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    bottom: 0;
+    right:0;
+    transform: translateY(100%);
+    transition: 1s ease-in-out;
+ }
+
+ .container2:hover .textContainer2{
+    transform: translateY(0);
+ }
+ .container2:hover .imageContainer2{
+    transform: translateY(-30%);
+ }
