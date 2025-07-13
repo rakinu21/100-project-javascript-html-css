@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #555;
+
+}
+
+.container{
+    width: 400px;
+    height: 500px;
+    background-color: #131313;
+    overflow-y: scroll;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: justify;
+}
