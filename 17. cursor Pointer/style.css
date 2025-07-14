@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: none; /* Hide default cursor */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 50px;
+  background-color: #131313;
+}
+
+.title,
+.paragraph,
+.button {
+  transition: color 0.3s ease;
+}
+
+.title {
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.paragraph {
+  width: 600px;
+  text-align: justify;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.button {
+  padding: 1rem 4rem;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: none; /* Hide default cursor here too */
+}
+
+/* Text hover effect */
+.title:hover,
+.paragraph:hover,
+.button:hover {
+  color: yellow;
+}
+
+/* Cursor styles */
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: yellow;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+}
+
+/* Cursor grows only when this class is applied */
+.cursor.grow {
+  width: 500px;
+  height: 500px;
+  font-size: 4rem;
+  border: 2px solid white;
+  background-color: transparent;
+}
