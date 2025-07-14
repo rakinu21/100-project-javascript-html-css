@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin:  0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color: #555;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    display: flex;
+    gap: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.js{
+    font-size: 3rem;
+    color: yellow;
+}
+
+.auto-text{
+    font-size: 3rem;
+}
+
+.cursor{
+    font-size: 3rem;
+    width: 2px;
+    height: 3rem;
+    background-color: red;
+    transition: all 0.2s;
+}
+
+.cursor.active {
+  opacity: 0;
+  transition: opacity 0.2s;
+
+}
