@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #555;
+}
+
+.emoji{
+    font-size: 15rem;
+    color: red;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+    filter: grayscale(1);
+    transform: scale(1);
+}
+
+.emoji:hover{
+    opacity: 1;
+    transform: scale(1.2); 
+   filter: grayscale(0);
+}
