@@ -20,8 +20,13 @@ body{
     justify-content: center;
     padding: 10px;
     border: 1px solid #000;
-    transition: all 1s;
+    transition: width 1s;
     transform: translate(0);
+    width: 70px; /* 👈 Add this line */
+}
+
+.container.active{
+    width: 500px;
 }
 
 ul{
@@ -35,22 +40,18 @@ ul{
      opacity: 1;
      opacity: 0;
      transition: all 2s;
+     position: absolute;
 
 }
 
 .container.active ul{
-    width: 360px;
+    position: relative;
+    transition: all 1s;
     transform: translate(0);
     opacity: 1;
 }
 
 
-
-
-
-ul.active{
-    display: flex;
-}
 
 li{
     cursor: pointer;
