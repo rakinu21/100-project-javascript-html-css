@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: blueviolet;
+}
+
+.copybtn{
+    font-size: 2rem;
+    padding:1rem 5rem;
+}
+.movebtn{
+     font-size: 2rem;
+    padding:1rem 5rem;
+}
+
+textarea{
+    width: 400px;
+    height: 100px ;
+}
+
+.container-output{
+    flex: 1;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* javascript */
+
+.added{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+
+}
