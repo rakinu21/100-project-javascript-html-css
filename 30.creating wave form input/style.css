@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 500px;
+    height: 520px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.special{
+    background-color: red;
+    color: #fff;
+    padding: 0 20px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 50px;
+
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 2px;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+}
+
+
+.btn{
+    width: 100%;
+    padding: 15px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    background-color: rgb(229, 56, 56);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.form-control input:focus,
+.form-control input:valid{
+    border-bottom-color: crimson;
+}
+
+.btn:focus{
+    outline: none;
+    border: none;
+}
+
+.btn:active{
+    transform: scale(1.1);
+}
+
+/* javascript */
+
+.form-control label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.555);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color: crimson;
+    transform: translateY(-30px);
+}
+
+
+
+
