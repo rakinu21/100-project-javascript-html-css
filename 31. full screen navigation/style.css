@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0 40px;
+
+}
+
+
+.icon{
+    width: 40px;
+    height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    background-color: #903edd;
+    z-index: 2;
+}
+
+ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #903edd;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+    gap: 20px;
+
+   clip-path: circle(0% at 90% 40px); /* starts small at top-right */
+    transition: clip-path 0.7s ease-in-out, opacity 0.3s ease-in-out;
+    pointer-events: none; /* prevent clicking when hidden */
+}
+
+ul.active{
+    clip-path: circle(150% at 50% 50%);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    transform-origin: top;
+    transform: translateY(0);
+    width: 150px;
+    cursor: pointer;
+
+    
+
+}
+
+li::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    transition: all 0.5s;
+    transform-origin: top;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+    z-index: -1;
+    width: 100% ;
+    height: 100%;
+}
+
+li:hover::before{
+    transform: translateY(30px);
+    background-color:white;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.images{
+    width: 700%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.text{
+    width: 800px;
+    height: 500px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 4rem;
+}
+
