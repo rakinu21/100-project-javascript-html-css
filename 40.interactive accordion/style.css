@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: azure;
+}
+
+
+.container{
+    width: 700px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+    color: #e8dfdf;
+    background-color: #131313;
+    gap: 20px;
+}
+
+.content-container{
+    width: 100%;
+    border-bottom: 3px solid rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.content-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.open-button{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.open-button-span{
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+  
+}
+
+.open-button-span:nth-child(1){
+    position: absolute;
+    
+}
+
+.open-button-span:nth-child(2){
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.open-button.active{
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+
+.open-button.active .open-button-span:nth-child(1){
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+
+.content-container-text{
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.content-container-text.active{
+    z-index: 2;
+    position:relative;
+    bottom: 0;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+
+
+
+
+
+
