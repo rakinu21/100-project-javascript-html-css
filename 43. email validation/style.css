@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(62, 62, 123);
+}
+
+
+body .mainform{
+    width: auto;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    border: 2px solid red;
+}
+
+#inputBox{
+    width: 400px;
+    height: 70px;
+    padding: 20px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.mainform.invalid::before{
+    content: '';
+    background-image: url('images/image1.png');
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.mainform.valid::before{
+    content: '';
+    background-image: url('images/image.png');
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%, -50%);
+}
+
