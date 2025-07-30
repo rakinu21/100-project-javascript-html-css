@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #121212;
+  
+  
+}
+
+
+.container-section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+     perspective: 500px;
+}
+
+
+.navbar{
+    position: absolute;
+    height: 100vh;
+    width: 200px;
+    background-color: #6f6d6d;
+    transition: 0.5s;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.navbar.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.list-items{
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.list{
+    color: #fff;
+    font-family: sans-serif;
+
+}
+
+
+.container-form{
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition:transform 1s ease-in-out;
+    transform-origin: center left;
+}
+
+
+
+.button-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    color: crimson;
+    cursor: pointer;
+}
+
+
+.button.remove{
+   display: none;
+}
+
+.buttonClose{
+    display: none;
+}
+
+.buttonClose.active{
+    display: flex;
+    color: crimson;
+    cursor: pointer;
+}
+
+
+
+.form{
+    width: 400px;
+    height: 500px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #fff;
+    gap: 10px;
+}
+
+.form-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+label{
+    font-size: .8rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+.form-list input{
+    height: 2.5rem;
+    padding: 10px;
+    background-color: #6f6d6d;
+    border: none;
+
+}
+
+
+/* javascript */
+
+.container-form.active{
+transform: translate(200px) rotateY(20deg);
+
+border: 2px solid rgb(252, 252, 252);
+
+}
+
+
