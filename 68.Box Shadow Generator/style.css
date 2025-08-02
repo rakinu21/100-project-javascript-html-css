@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.container{
+    width: 700px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.container-boxshadow{
+    width: 500px;
+    height: 300px;
+    border: 2px solid rgb(0, 0, 0);
+    
+}
+
+.container-radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid red;
+}
+
+.range{
+    width: 100px;
+}
+.container-output-and-copy{
+    display: flex;
+    width: 100%;
+    gap: 5px;
+
+}
+
+.copy{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.output{
+   flex: 1;
+   border: none;
+   border-bottom: 1px solid #000;
+}
+
+
+.colorr{
+  width: 200px;
+  height: 2rem;
+ 
+}
