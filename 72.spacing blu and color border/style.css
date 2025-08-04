@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.operator{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-container{
+    display: flex;
+    gap: 10px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.image-container{
+    width: 500px;
+    height: 300px;
+    /* background-image: url();
+    background-position:  center;
+    background-repeat: no-repeat; */
+    background-size: cover;
+
+}
