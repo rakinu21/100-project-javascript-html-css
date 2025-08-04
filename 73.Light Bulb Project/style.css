@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
+}
+
+
+body.on{
+    background: radial-gradient(#555, #111);
+}
+
+
+.light{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.wire{
+    position: absolute;
+    height: 60vh;
+    width: 4px;
+    background-color: #000;
+    z-index: 1;
+}
+
+.bulb{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #444;
+    border-radius: 50%;
+    z-index: 2;
+    top: 60vh;
+}
+
+.bulb::before{
+content:'';
+position: absolute;
+left: 22.5px;
+top: -50px;
+   width: 35px;
+    height: 80px;
+    background-color:#444;
+    border-top: 30px solid #000;
+    border-radius: 10px;
+
+}
+
+
+   body.on .bulb::after {
+    content: ''; /* ← REQUIRED */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 3;
+}
+
+.switch {
+    width: 100px;
+    height: 50px;
+    background-color: #444;
+    border-radius: 25px;
+    position: relative;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: inset 0 0 8px #000;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 5px #000;
+    transition: left 0.3s ease;
+}
+
+/* Button position when light is ON */
+body.on .btn {
+    left: 50px;
+}
+
+/* Switch background color when ON */
+body.on .switch {
+    background-color: #888;
+}
