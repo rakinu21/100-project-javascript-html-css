@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #333;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.testtimonial-container{
+    background-color: #191919;
+    color: #fff;
+    padding: 5rem 8rem;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 2px 4px 2px #191919;
+    transition: 0.5s ease;
+     transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+.testtimonial-container.animate {
+    transform: scale(0.95) translateY(10px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+.testimonials{
+    line-height:25px;
+    text-align: center;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.user .user-info{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.username{
+    margin: 0;
+}
+
+.line{
+    background-color: crimson;
+    height: 4px;
+    width: 100%;
+    margin-top: 20px;
+    animation: animation 10s linear infinite
+}
+
+
+@keyframes animation {
+    0%{
+        transform: scaleX(0);
+    }
+}
