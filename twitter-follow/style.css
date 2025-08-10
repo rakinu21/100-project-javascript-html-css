@@ -13,6 +13,9 @@ body {
     justify-content: center;
     padding: 40px;
     transition: background 0.3s, color 0.3s;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
 /* Dark theme */
@@ -46,6 +49,10 @@ body.dark {
     width: 320px;
     overflow: hidden;
     transition: background 0.3s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
 }
 
 body.dark .card {
