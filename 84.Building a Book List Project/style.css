@@ -1,0 +1,118 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.conntainer {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 800px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #007bff;
+}
+
+.addBook {
+    padding: 10px 20px;
+    background-color: #ff007b;
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addBook:hover {
+    background-color: #0056b3;
+}
+
+.list-container {
+    margin-top: 20px;
+   
+    display: flex;
+
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.listed{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#007bff;
+    padding: 10px;
+}
+
+.listed .list{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #eee;
+}
+
+ul{
+
+  width: 100%;
+
+
+}
+
+.container-output-list{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+
+li {
+    color: #ffffff;
+    text-transform: capitalize;
+    list-style: none;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+
+
+}
+
