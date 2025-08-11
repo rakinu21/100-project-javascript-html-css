@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    font-family: Arial, sans-serif;
+}
+
+.output {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Shape styles */
+.shape {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.shape:hover {
+    transform: scale(1.1);
+}
+
+/* Score & Timer display */
+.info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
