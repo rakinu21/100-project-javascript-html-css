@@ -1,14 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-   font-family: "DM Serif Text", serif;
+  font-family: "DM Serif Text", serif;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     padding: 0 30px;
@@ -16,7 +15,8 @@ body{
     background-color: #333;
 }
 
-.links-container{
+/* Navbar base */
+.links-container {
     width: 100%;
     height: 4rem;
     background-color: #131313;
@@ -28,27 +28,61 @@ body{
     left: 0;
 }
 
-.links-container .logo{
-    color: white ;
+.links-container .logo {
+    color: white;
     text-decoration: none;
     cursor: pointer;
     font-size: 2rem;
     text-transform: capitalize;
-
 }
 
-
-.list-container-ul{
+.list-container-ul {
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.lists-links{
+.lists-links {
     color: #fff;
     text-transform: capitalize;
     list-style: none;
 }
+
+/* ======== Tablet View ======== */
+@media (max-width: 1024px) {
+    .links-container {
+        padding: 0 50px;
+    }
+    .list-container-ul {
+        gap: 30px;
+    }
+
+    .logo{
+        font-size: 2rem;
+    }
+}
+
+/* ======== Mobile View ======== */
+@media (max-width: 768px) {
+    .links-container {
+        align-items: center;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .links-container .logo{
+      font-size: 1rem;
+    }
+
+
+    .list-container-ul {
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+
 
 
 
