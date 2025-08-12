@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+   font-family: "DM Serif Text", serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    position: relative;
+    background-color: #333;
+}
+
+.links-container{
+    width: 100%;
+    height: 4rem;
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: absolute;
+    left: 0;
+}
+
+.links-container .logo{
+    color: white ;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2rem;
+    text-transform: capitalize;
+
+}
+
+
+.list-container-ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.lists-links{
+    color: #fff;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+
+
