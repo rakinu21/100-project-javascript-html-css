@@ -503,3 +503,117 @@ body {
 }
 
 
+/* css for the footer the last section of this project */
+
+
+.footer{
+     width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+.cotainer-footer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 100px;
+  flex-wrap: wrap;
+
+}
+
+.container-fotter-content{
+    width: 400px;
+}
+
+.title-footer{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.highlight{
+    color: #eeae18;
+}
+.context-footer{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+
+.line-footer{
+    width: 600px;
+    background-color: #eeae18;
+    height: 2px;
+    border: none;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-end{
+   padding: 20px;
+   text-transform: capitalize;
+   color: #fff;
+   text-align: center;
+   
+}
+
+.line-footer{
+    margin-bottom: 20px;
+}
+.copyright{
+    margin-top: 10px;
+
+   
+}
+
+.highlight-color{
+    color: #eeae18;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    .footer{
+        margin-top: 800px;
+    }
+
+    .footer-end{
+        margin-top: 300px;
+    }
+}
+
+
+@media(max-width: 767px){
+      .footer{
+        margin-top: 900px;
+    }
+
+    .line-footer{
+        width: 200px;
+    }
+
+     .footer-end{
+        margin-top: 300px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
