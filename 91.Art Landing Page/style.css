@@ -74,3 +74,66 @@ body{
     width: 30px;
    }
 }
+
+
+/* hero section text css */
+
+
+.text-hero{
+    width: 100%;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.text-hero-h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+
+}
+
+.text-hero-context{
+    width: 600px;
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+.high-hero-context{
+    background-color: grey;
+    color: #fff;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .text-hero{
+
+        padding: 100px 20px;
+    }
+
+    .text-hero-h1{
+        font-size: 4rem;
+    }
+
+    .text-hero-context{
+  
+    font-size: 1.1rem;
+    }
+}
+
+
+@media(max-width: 767px){
+    .text-hero{
+        padding: 50px 10px;
+    }
+
+    .text-hero-h1{
+        font-size: 3rem;
+    }
+
+     .text-hero-context{
+         width: 300px;
+         font-size: 1rem;
+    }
+}
