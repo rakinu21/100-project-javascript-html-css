@@ -137,3 +137,31 @@ body{
          font-size: 1rem;
     }
 }
+
+
+/* image section css */
+
+
+.image-section {
+    width: 100%;
+    padding: 0 20px; /* Smaller padding for small devices */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* space between images */
+}
+
+.wapper {
+    flex: 1 1 calc(50% - 20px); /* 2 per row on desktop */
+    max-width: calc(50% - 20px);
+    height: auto;
+}
+
+.image-section-image {
+    width: 100%;
+    height: auto; /* maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 8px; /* optional styling */
+}
+
