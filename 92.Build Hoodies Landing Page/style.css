@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+
+
+body{
+    padding: 0 50px;
+}
+
+
+.heaader{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo{
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 500;
+
+}
+
+.span-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.span-ham{
+    width: 40px;
+    height: 4px;
+    background-color: aqua;
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .heaader{
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 767px){
+
+    .heaader{
+        padding: 0;
+    }
+}
