@@ -8,6 +8,7 @@
 
 body{
     padding: 0 50px;
+    overflow-x: hidden
 }
 
 .hero{
@@ -489,22 +490,26 @@ body{
 /* footer css  */
 
 .footer{
-    width: 100vw;
+    width: 100dvw;
     background-color: #472929;
     margin-left: -50px;
     padding: 100px;
-    height: 500px;
+    
     gap: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .text-footer-container{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    flex: 1;
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
 .text-footer{
@@ -523,6 +528,19 @@ body{
    .footer{
     align-items: start;
      padding: 30px 30px;
+     gap: 30px;
+   }
+
+   .text-footer-container{
+     gap: 30px;
+   }
+
+   .text-footer{
+    font-size: 1.5rem;
+   }
+
+   .footer-context{
+    font-size: 14px;
    }
   
 }
